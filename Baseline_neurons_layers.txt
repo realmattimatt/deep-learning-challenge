@@ -1,0 +1,66 @@
+Baseline
+nn = tf.keras.models.Sequential()
+nn.add(tf.keras.layers.Dense(units=50, activation="relu", input_dim=X_train.shape[1]))  
+nn.add(tf.keras.layers.Dense(units=25, activation="relu"))
+nn.add(tf.keras.layers.Dense(units=1, activation="sigmoid"))
+215/215 - 0s - 1ms/step - accuracy: 0.7283 - loss: 0.5552
+Loss: 0.555197536945343, Accuracy: 0.7282798886299133
+
+Added 3rd Layer
+nn = tf.keras.models.Sequential()
+nn.add(tf.keras.layers.Dense(units=50, activation="relu", input_dim=X_train.shape[1]))  
+nn.add(tf.keras.layers.Dense(units=25, activation="relu"))
+nn.add(tf.keras.layers.Dense(units=12, activation="relu"))  # New layer
+nn.add(tf.keras.layers.Dense(units=1, activation="sigmoid"))
+215/215 - 0s - 1ms/step - accuracy: 0.7281 - loss: 0.5568
+Loss: 0.5568378567695618, Accuracy: 0.7281340956687927
+
+Tried with tanh the same 3 layer
+nn = tf.keras.models.Sequential()
+nn.add(tf.keras.layers.Dense(units=50, activation="tanh", input_dim=X_train.shape[1])) 
+nn.add(tf.keras.layers.Dense(units=25, activation="tanh"))
+nn.add(tf.keras.layers.Dense(units=12, activation="tanh"))
+nn.add(tf.keras.layers.Dense(units=1, activation="sigmoid"))
+215/215 - 0s - 1ms/step - accuracy: 0.7289 - loss: 0.5549
+Loss: 0.5548577904701233, Accuracy: 0.728863000869751
+
+tanh still but dropped last layer
+nn = tf.keras.models.Sequential()
+nn.add(tf.keras.layers.Dense(units=50, activation="tanh", input_dim=X_train.shape[1])) 
+nn.add(tf.keras.layers.Dense(units=25, activation="tanh"))
+nn.add(tf.keras.layers.Dense(units=1, activation="sigmoid"))
+215/215 - 0s - 1ms/step - accuracy: 0.7261 - loss: 0.5557
+Loss: 0.5557056069374084, Accuracy: 0.7260932922363281
+
+tanh still but increased units
+nn = tf.keras.models.Sequential()
+nn.add(tf.keras.layers.Dense(units=128, activation="tanh", input_dim=X_train.shape[1])) 
+nn.add(tf.keras.layers.Dense(units=64, activation="tanh"))
+nn.add(tf.keras.layers.Dense(units=1, activation="sigmoid"))
+215/215 - 0s - 2ms/step - accuracy: 0.7271 - loss: 0.5545
+Loss: 0.554459810256958, Accuracy: 0.7271137237548828
+
+Baseline with added neurons
+nn = tf.keras.models.Sequential()
+nn.add(tf.keras.layers.Dense(units=128, activation="relu", input_dim=X_train.shape[1]))  
+nn.add(tf.keras.layers.Dense(units=64, activation="relu"))
+nn.add(tf.keras.layers.Dense(units=1, activation="sigmoid"))
+215/215 - 0s - 1ms/step - accuracy: 0.7299 - loss: 0.5551
+Loss: 0.5551041960716248, Accuracy: 0.7298833727836609
+
+Baseline with added neurons pt2 more neurons
+nn = tf.keras.models.Sequential()
+nn.add(tf.keras.layers.Dense(units=256, activation="relu", input_dim=X_train.shape[1]))  
+nn.add(tf.keras.layers.Dense(units=128, activation="relu"))
+nn.add(tf.keras.layers.Dense(units=1, activation="sigmoid"))
+215/215 - 0s - 1ms/step - accuracy: 0.7255 - loss: 0.5548
+Loss: 0.5548296570777893, Accuracy: 0.7255101799964905
+
+Baseline with less neurons
+nn = tf.keras.models.Sequential()
+nn.add(tf.keras.layers.Dense(units=36, activation="relu", input_dim=X_train.shape[1]))  
+nn.add(tf.keras.layers.Dense(units=18, activation="relu"))
+nn.add(tf.keras.layers.Dense(units=1, activation="sigmoid"))
+215/215 - 0s - 1ms/step - accuracy: 0.7290 - loss: 0.5547
+Loss: 0.5547442436218262, Accuracy: 0.7290087342262268
+
