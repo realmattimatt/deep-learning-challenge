@@ -2,11 +2,13 @@
 
 ## **Overview**: The goal was to build and optimize a deep learning model to predict successful funding applications.
 
-### **Results**:
-  #### **Data Processing**:
-  - What variable(s) are The target(s) for your model? 
-  - What variable(s) are the features for your model?
-  - What variable(s) should be removed from the input data because they are neither targets nor features?
+### **Results**
+  #### **Data Processing**
+  - Target Variable(s):
+    - The Target was the column (**IS_SUCCESSFUL**)
+  - Feature Variables:
+    - The Feature variables were (**APPLICATION_TYPE,AFFILIATION	CLASSIFICATION,	USE_CASE,	ORGANIZATION,	STATUS,	INCOME_AMT,	SPECIAL_CONSIDERATIONS,	ASK_AMT**)
+    - The following variables were removed from the input data because they are neither targets nor features (**EIN, NAME, and the original ASK_AMT**), **ASK_AMT** due to extreme outliers there for was transformed and renamed to "**ASK_AMT_LOG** and used in the Features"
 
   #### **Compiling, Training, and Evaluating the Model**
   - How many neurons, layers, and activation functions did you select for your neural network model, and why?
