@@ -64,3 +64,11 @@ nn.add(tf.keras.layers.Dense(units=1, activation="sigmoid"))
 215/215 - 0s - 1ms/step - accuracy: 0.7290 - loss: 0.5547
 Loss: 0.5547442436218262, Accuracy: 0.7290087342262268
 
+Added NAME back to the features 3 layers
+nn = tf.keras.models.Sequential()
+nn.add(tf.keras.layers.Dense(units=100, activation="relu", input_dim=X_train.shape[1]))
+nn.add(tf.keras.layers.Dense(units=30, activation="sigmoid"))
+nn.add(tf.keras.layers.Dense(units=10, activation="sigmoid"))
+nn.add(tf.keras.layers.Dense(units=1, activation="sigmoid"))
+215/215 - 0s - 1ms/step - accuracy: 0.7864 - loss: 0.4436
+Loss: 0.4436438977718353, Accuracy: 0.7864431738853455
