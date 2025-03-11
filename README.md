@@ -65,6 +65,7 @@ This project demonstrated the effectiveness of deep learning for predicting fund
 
 [Sample 2 Seaborn Chart](Images/seaborn_graph_amt.png)
 
+[Sample 3 Google Colab](Images/Google_colab.png)
 
 ## **Data Source**
 The dataset was sourced from the IRS. [Tax Exempt Organization Search Bulk Data Downloads](https://www.irs.gov/)

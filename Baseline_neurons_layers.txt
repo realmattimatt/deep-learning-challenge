@@ -64,7 +64,7 @@ nn.add(tf.keras.layers.Dense(units=1, activation="sigmoid"))
 215/215 - 0s - 1ms/step - accuracy: 0.7290 - loss: 0.5547
 Loss: 0.5547442436218262, Accuracy: 0.7290087342262268
 
-Added NAME back to the features 3 layers
+Added NAME back to the features 3 layers       Best so far ---------------------
 nn = tf.keras.models.Sequential()
 nn.add(tf.keras.layers.Dense(units=100, activation="relu", input_dim=X_train.shape[1]))
 nn.add(tf.keras.layers.Dense(units=30, activation="sigmoid"))
@@ -72,3 +72,27 @@ nn.add(tf.keras.layers.Dense(units=10, activation="sigmoid"))
 nn.add(tf.keras.layers.Dense(units=1, activation="sigmoid"))
 215/215 - 0s - 1ms/step - accuracy: 0.7864 - loss: 0.4436
 Loss: 0.4436438977718353, Accuracy: 0.7864431738853455
+
+Same as above but with different activation
+nn.add(tf.keras.layers.Dense(units=100, activation="relu", input_dim=X_train.shape[1]))
+nn.add(tf.keras.layers.Dense(units=30, activation="relu"))
+nn.add(tf.keras.layers.Dense(units=10, activation="relu"))
+nn.add(tf.keras.layers.Dense(units=1, activation="sigmoid"))
+215/215 - 0s - 1ms/step - accuracy: 0.7844 - loss: 0.4465
+Loss: 0.44650477170944214, Accuracy: 0.7844023108482361
+
+Same as above but with different activation
+nn.add(tf.keras.layers.Dense(units=100, activation="relu", input_dim=X_train.shape[1]))
+nn.add(tf.keras.layers.Dense(units=30, activation="relu"))
+nn.add(tf.keras.layers.Dense(units=10, activation="sigmoid"))
+nn.add(tf.keras.layers.Dense(units=1, activation="sigmoid"))
+215/215 - 0s - 1ms/step - accuracy: 0.7857 - loss: 0.4431
+Loss: 0.4431096017360687, Accuracy: 0.7857142686843872
+
+Same as above but with different activation
+nn.add(tf.keras.layers.Dense(units=100, activation="sigmoid", input_dim=X_train.shape[1]))
+nn.add(tf.keras.layers.Dense(units=30, activation="sigmoid"))
+nn.add(tf.keras.layers.Dense(units=10, activation="sigmoid"))
+nn.add(tf.keras.layers.Dense(units=1, activation="sigmoid"))
+215/215 - 0s - 2ms/step - accuracy: 0.7863 - loss: 0.4437
+Loss: 0.44366541504859924, Accuracy: 0.7862973809242249

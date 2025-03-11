@@ -21,7 +21,9 @@ The goal was to build and optimize a deep learning model to predict successful f
   - "The distribution of ASK_AMT is highly skewed, with most values concentrated near zero and a few extreme outliers."
   - "A significant discrepancy in ASK_AMT exists, with most values being very low, while some are extremely high. The log transformation helps reveal this pattern more clearly."
 ![Sample Optimizations](Images/Sample_optimizations.png)
+![Sample Neuron Layers](Images/Google_colab.png)
   - Examples of optimization using neurons and layers. For more: See [Added Notes](#added-notes)
+
 
 
 ### **Summary**: Overall, by increasing the accuracy above 75% we are able to correctly classify each of the points in the test data 75% of the time. Additionally, the model predicts successful applications with approximately 80% confidence. 
