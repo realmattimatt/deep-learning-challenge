@@ -57,7 +57,7 @@ This project demonstrated the effectiveness of deep learning for predicting fund
 ## **How to Run the Application**
 1. **Install Dependencies**: See [**Sources**](#sources) for additional information.
 2. **Run the Jupyter Notebook**: Open and run all cells from **top to bottom** in the following notebook:  
-   - [**Deep Learning Challenge**](AlphabetSoupCharity_Optimization.ipynb)
+   - [**Deep Learning Challenge**](https://colab.research.google.com/drive/1kUOWUprjhsx66qhrq6K8jQIbUsd8Fp_n)
 
 
 ## **Sample Visualizations**
@@ -73,8 +73,10 @@ The dataset was sourced from the IRS. [Tax Exempt Organization Search Bulk Data 
 * Office hours / instructional time / T.A.'s
 * [sklearn.preprocessing.StandardScaler](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html)
 * Xpert Learning Assist
+* Tutor sessions
 * Google
 * ChatGPT
+
 
 ## **License**
 This project is licensed under the [GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007](./LICENSE) - see the LICENSE file for details here.

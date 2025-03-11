@@ -4,6 +4,16 @@
 The goal was to build and optimize a deep learning model to predict successful funding applications.
 
 ### **Results**
+
+* Final Model Accuracy: 78.64%
+* Final Model Loss: 0.4436
+#### Hyperparameter Tuning Attempts:
+* Accuracy = 72.5%
+* Loss = 0.5312
+#### Optimized Model (Additional Hidden Layers & Neurons):
+* Accuracy = 78.64%
+* Loss = 0.4436
+* 
   #### **Data Processing**
   - Target Variable(s):
     - The Target was the column **IS_SUCCESSFUL**
@@ -19,8 +29,11 @@ The goal was to build and optimize a deep learning model to predict successful f
 ### **Visualizations** 
 ![ASK_AMT](Images/seaborn_graph_amt.png)
   - "The distribution of ASK_AMT is highly skewed, with most values concentrated near zero and a few extreme outliers."
+
   - "A significant discrepancy in ASK_AMT exists, with most values being very low, while some are extremely high. The log transformation helps reveal this pattern more clearly."
 ![Sample Optimizations](Images/Sample_optimizations.png)
+
+A sample of the optimizations used.
 ![Sample Neuron Layers](Images/Google_colab.png)
   - Examples of optimization using neurons and layers. For more: See [Added Notes](#added-notes)
 
