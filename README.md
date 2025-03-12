@@ -28,21 +28,22 @@ The primary objective of this project is to develop and optimize a deep learning
 * **Recommendation**: Based on the evaluation results, determining the model's suitability for real-world applications. This includes considering its predictive accuracy and the potential impact on funding decisions.
 
 ## **Results**
-- **Final Model Accuracy**: 78.64%
-- **Final Model Loss**: 0.4436
+- **Final Model Accuracy**: 78.45%
+- **Final Model Loss**: 0.4429
 
 ### **Hyperparameter Tuning Attempts:**
 - **Baseline Model:** 
-  - Accuracy = 72.5%
-  - Loss = 0.5312
+  - Accuracy = 72.68%
+  - Loss = 0.5538
 - **Optimized Model (Additional Hidden Layers & Neurons):** 
-  - Accuracy = 78.64%
-  - Loss = 0.4436
+  - Accuracy = 78.45%
+  - Loss = 0.4429
 
 
 ### **Key Findings**
 - The deep-learning model outperformed basic ML approaches but struggled with overfitting.
 - Further improvements could include additional data augmentation or more feature engineering.
+- Adding the NAME feature with a value over 5, increased the accuracy by 5%. From 73% to 78%
 
 
 ## **Summary**
@@ -67,13 +68,21 @@ This project demonstrated the effectiveness of deep learning for predicting fund
 
 [Sample 3 Google Colab](Images/Google_colab.png)
 
+[Sample 4 myHDF5 viewer](Images/myHDF5_sample.png)
+
 ## **Data Source**
 The dataset was sourced from the IRS. [Tax Exempt Organization Search Bulk Data Downloads](https://www.irs.gov/)
 ## **Sources**
 * Office hours / instructional time / T.A.'s
 * [sklearn.preprocessing.StandardScaler](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html)
+* [Tensorflow](https://www.tensorflow.org/guide/keras)
+* [Scikit-learn](https://scikit-learn.org/stable/)
+* [Matplotlib](https://matplotlib.org/)
+* [Seaborn](https://seaborn.pydata.org/)
+* [Pandas](https://pandas.pydata.org/)
+* [Numpy](https://numpy.org/doc/stable/)
 * Xpert Learning Assist
-* Tutor sessions
+* Tutor sessions (Carlos Gattorno)
 * Google
 * ChatGPT
 

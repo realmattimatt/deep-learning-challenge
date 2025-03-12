@@ -5,14 +5,12 @@ The goal was to build and optimize a deep learning model to predict successful f
 
 ### **Results**
 
-* Final Model Accuracy: 78.64%
-* Final Model Loss: 0.4436
 #### Hyperparameter Tuning Attempts:
-* Accuracy = 72.5%
-* Loss = 0.5312
+* Accuracy = 72.6%
+* Loss = 0.5538
 #### Optimized Model (Additional Hidden Layers & Neurons):
-* Accuracy = 78.64%
-* Loss = 0.4436
+* Accuracy = 78.45%
+* Loss = 0.4429
 * 
   #### **Data Processing**
   - Target Variable(s):
@@ -23,8 +21,9 @@ The goal was to build and optimize a deep learning model to predict successful f
     - "Reintroducing the NAME feature during optimization significantly improved the model. Although the initial instructions recommended dropping it, including it proved beneficial."
   #### **Compiling, Training, and Evaluating the Model**
   - How many neurons, layers, and activation functions did you select for your neural network model, and why? This model consists of three hidden layers with 100, 30, and 10 neurons, respectively. After experimenting with different architectures, this configuration yielded the best performance within the given time constraints.
-  - Were you able to achieve the target model performance? YES
-  - See added notes. 
+  - Were you able to achieve the target model performance? Yes, the target accuracy was achieved by reintroducing the NAME feature. This adjustment increased accuracy from 73% to 78%.
+  - Describe how you could use a different model to solve the same problem, and explain why you would use that model. There are other models I have not reaserched yet like **CNN**, **RNN** etc. Those may add to the accuracy lower the loss values. Many attempts were made using **relu**, **tanh** and **sigmoid**. Results are documented in the [Baseline Neurons and Layers.txt file](Baseline_neurons_layers.txt)
+  - See [Added Notes](#added-notes)
 
 ### **Visualizations** 
 ![ASK_AMT](Images/seaborn_graph_amt.png)
